@@ -269,7 +269,8 @@ public interface HealthyMan {
 
   这样的编码是通过不了编译的，ide会提示:
 
-  ![image-20231119163127512](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231119163127512.png)
+ <img width="756" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/56b7a3dc-207e-4622-a0c2-45b99cb46700">
+
 
   解决的方法是，由于接口中的所有属性都默认被修饰为`public static fianl`，故在此场景我们可以通过`接口名.属性名`去访问，而对于父类中的属性通过`super.属性名`去访问
 

@@ -10,26 +10,30 @@
 
 **万丈高楼平地起**，于作者本人的学习理念上，认为学习任何技术都应打好基础，有一定的个人沉淀。如果该文档能作为以Golang为主语言者在过渡到以Java为主语言这一阶段的参考文档、或在增添Java技术栈时的学习参考文档，或仅仅是对您有所帮助，是我莫大的荣幸
 
-因为作者水平十分有限，不正之处、您认为的有所补充之处或含义更正确之处，恳请您不吝指正以及欢迎您提的issus，若您的issus被采纳，我将关注您
+因为作者水平十分有限，不正之处、您认为的有所补充之处或含义更正确之处，恳请您不吝指正以及欢迎您提的issus，若您的issus被采纳，我将会关注您
 
 # 本文特色
 
 - **在基础部分附有大量Golang与Java的对比**，十分适合Gopher或对Golang有兴趣的Java同学参考，比如在**方法重写**这一小节中:
-  <img width="701" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/ad72de1e-78b6-4606-a772-24ff7fd0cb97">
+  <img width="833" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/fdbfe712-22bb-464d-9d06-311365a4454a">
 
-<img width="822" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/3074e6fd-b344-498d-8169-56920399faba">
+
+<img width="838" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/9e9e2ec0-6861-4dd6-a64f-a24dfb0e5c6a">
+
 
 ​   您可以在本文中参考到很多诸如上述的对比例子
 
-- 在本文中您可以参考到很多**基于作者个人视角的思考**，或许能帮助您拓宽对某个知识点的理解面，比如在**多态**这一小节中:
+- 在本文中您可以参考到很多**基于作者个人视角的思考**，或许能帮助您拓宽对某个知识点的理解面，比如在**浅谈接口的实际意义**这一小节中:
 
-  <img width="835" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/781ef0e2-a843-4203-859a-ffb2526cd5b3">
+  <img width="834" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/9cc1b864-84fe-4af7-b072-685830a2a822">
+
 
   您可以看到很多作者基于客观基础知识的主观性思考
 
 - **本文重试以Demo论述知识点**，附大量代码，比如在**向下转型**这一小节中，您可以看到:
 
-  <img width="846" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/87e8097d-a189-427b-b648-ccb50bd29507">
+  <img width="833" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/171dea58-1a79-4ccd-8fc3-494c0feafc1b">
+
 
 - **本文在不同知识点的详细程度上会有的放矢**，因为本意是Go->Java的转型，故最大的转变个人认为是由函数式编程->纯面向对象的转变，由此该偏向性造成不同章节的篇幅差别较大，比如**数组**和**包**由于其与其他知识点的隔离性，仍作为了独立章节进行笔记分享，但由于其并不是转型的关键点故其中所包含的字符数分别有2181、627个，而**类与对象**这一章节因其是转型到面向对象编程理念的核心章节，故有42622个字符
 
@@ -61,7 +65,7 @@
 
 其中在初版摒弃了I/O这一章节，原因在个人浅薄的理解上除了其类图相对Golang中的I/O操作有较强的在基础层面上的学习价值外，用法与理念和Golang中类似，故做省略，在后续更新中可能增添这一章节
 
-关于章节详情您可以查看MENU.md
+关于章节详情您可以查看MENU.md进行选择性阅读
 
 
 

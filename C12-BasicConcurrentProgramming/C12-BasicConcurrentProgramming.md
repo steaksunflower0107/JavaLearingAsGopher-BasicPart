@@ -2,7 +2,9 @@
 
 java中线程相关的类图如下图所示，可以看到java原生提供了`Thread`类可供我们的自定义类去继承从而进行线程相关的操作，也提供了`Runnable`接口去支持我们的自定义线程类
 
-![image-20231206170503137](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231206170503137.png)
+
+<img width="420" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/27f2db0c-3feb-4207-be50-b3d9c90b6d60">
+
 
 ## 创建线程
 
@@ -255,7 +257,8 @@ main station has got 10 tickets
 | `TIMED_WAITING` | 线程正在等待另一个线程执行特定操作，但只等待一段指定的时间（使用 `wait(long timeout)`、`sleep(long millis)`、`join(long millis)` 等方法）。 |
 | `TERMINATED`    | 线程已经执行完毕或被提前终止。                               |
 
-![image-20231213181116309](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231213181116309.png)
+<img width="651" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/1ed04997-ed3c-4461-82b1-54b3727c29de">
+
 
 该类中所枚举的状态和我们在操作系统中所学习到的**线程的状态**是紧密贴合的，不过在java中底层上整合了内核态和用户态，由此屏蔽了在编码时的一些细节
 

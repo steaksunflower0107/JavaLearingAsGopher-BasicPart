@@ -63,7 +63,8 @@ int[] array = {2, 3, 1, 4, 5, 5, 6};
 
   在ide中也有相应的提示，表示这是一个冗余的操作:
 
-  ![image-20231106184941951](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231106184941951.png)
+<img width="748" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/15e204ce-199f-405f-9ef1-b9742f41f3e1">
+
 
 **应用: 冒泡排序示例**
 

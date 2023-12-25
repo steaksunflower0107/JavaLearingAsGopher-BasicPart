@@ -6,7 +6,8 @@
 
 ## 单列集合(Collection接口)
 
-![image-20231125152031613](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231125152031613.png)
+<img width="653" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/a5c0694a-0426-4ef5-ab58-279763a854e0">
+
 
 可见单列集合都实现了`Collection`接口，且其没有直接的实现类，而是需要去实现`Set`和`List`
 
@@ -269,7 +270,8 @@ List接口中常见的方法有:
 
 ## 双列集合(Map接口)
 
-![image-20231125152302615](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231125152302615.png)
+<img width="653" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/33bfb959-f904-40be-bfeb-3fb22b694196">
+
 
 可见双列集合均实现了Map接口
 

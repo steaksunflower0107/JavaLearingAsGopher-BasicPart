@@ -181,13 +181,12 @@ var holiday = 10;
 
 - 整数类型，存放整数
   - byte(1个字节), short(2个字节), int(4个字节), long(8个字节)
-
-![image-20231101185601894](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231101185601894.png)
+    <img width="784" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/b09fe5a7-5d1f-4000-b9a6-b6e7203cf973">
 
 - 浮点数类型，存放小数
   - float(4个字节), double(8个字节)
+    <img width="771" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/a496b083-681b-48f5-afa4-e6854f4387d8">
 
-![image-20231101191232556](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231101191232556.png)
 
 **一个字节是8位有符号数，能表示的数据范围是-128~127**
 
@@ -259,12 +258,12 @@ System.out.println(512e-2);
 同样，这一点我也是今天才发现在go语言中这个问题也存在...
 
 Go:
-
-![](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231101193445753.png)
+<img width="784" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/5e3d7162-2509-4d7c-a4bd-922a50efb154">
 
 Java:
 
-![image-20231101193514510](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231101193514510.png)
+<img width="784" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/00dbff9f-4165-439c-a892-b9ea5eab746b">
+
 
 正确的判断两个浮点数是否相等的写法:
 
@@ -287,7 +286,7 @@ if (Math.abs(num5 - num6) < 0.0001) {
 
   输出:
 
-  ![image-20231101194648036](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231101194648036.png)
+<img width="395" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/bd11e87d-eb11-47c4-9e78-6bf3866a2330">
 
 char不能严格类比go语言中的类型，但在字符集这一方面，可以认为:
 
@@ -318,8 +317,7 @@ char不能严格类比go语言中的类型，但在字符集这一方面，可�
 ### 数据类型自动转换
 
 核心原则: `精度小的类型可以自动转换为精度大的类型`
-
-![image-20231101201344298](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231101201344298.png)
+<img width="779" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/198dda45-56fc-468c-a460-45675f578acf">
 
 如:
 
@@ -474,7 +472,7 @@ i = temp
 
 和go中完全一致
 
-![image-20231103144225146](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231103144225146.png)
+<img width="781" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/b00e80b1-9064-4ddc-8c01-33b571a122fe">
 
 1) a&b : & 叫逻辑与：规则：当 a 和 b 同时为 true ,则结果为 true, 否则为 false 
 2) a&&b : && 叫短路与：规则：当 a 和 b 同时为 true ,则结果为 true,否则为 false 
@@ -595,9 +593,10 @@ public boolean equals(Object anObject) {
 
 ## 关键字
 
-![image-20231103151017340](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231103151017340.png)
+<img width="784" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/7d2aac55-829f-4ced-85b3-f89628edb32e">
 
-![image-20231103151042454](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231103151042454.png)
+<img width="778" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/5c78207d-08a9-4361-8a4a-32a48b171be8">
+
 
 ## 保留字
 
@@ -637,7 +636,7 @@ double salary = myScanner.nextDouble();
 
 ## 原码、反码、补码复习
 
-![image-20231103154415022](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231103154415022.png)
+<img width="785" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/1bcb0b42-b6b2-4e7a-a721-45669b9ccc46">
 
 ## 位运算
 
@@ -776,7 +775,8 @@ for (; i < 10;) {
 
 但此时，ide会提升建议直接使用`while`，可能这是更适合while语义的场景
 
-![image-20231106163704998](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231106163704998.png)
+<img width="599" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/566ea332-62f9-400c-b5b7-5dceb6b5849d">
+
 
 3. java中有增强的for循环`for each`，有些类型于go中的`for range`
 

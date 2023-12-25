@@ -15,22 +15,21 @@
 # 本文特色
 
 - **在基础部分附有大量Golang与Java的对比**，十分适合Gopher或对Golang有兴趣的Java同学参考，比如在**方法重写**这一小节中:
+  <img width="701" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/ad72de1e-78b6-4606-a772-24ff7fd0cb97">
 
-  ![image-20231225130110227](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231225130110227.png)
+<img width="822" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/3074e6fd-b344-498d-8169-56920399faba">
 
-![image-20231225130127436](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231225130127436.png)
-
-​       您可以在本文中参考到很多诸如上述的对比例子
+​   您可以在本文中参考到很多诸如上述的对比例子
 
 - 在本文中您可以参考到很多**基于作者个人视角的思考**，或许能帮助您拓宽对某个知识点的理解面，比如在**多态**这一小节中:
 
-  ![image-20231225130520061](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231225130520061.png)
+  <img width="835" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/781ef0e2-a843-4203-859a-ffb2526cd5b3">
 
   您可以看到很多作者基于客观基础知识的主观性思考
 
 - **本文重试以Demo论述知识点**，附大量代码，比如在**向下转型**这一小节中，您可以看到:
 
-  ![image-20231225130853737](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231225130853737.png)
+  <img width="846" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/87e8097d-a189-427b-b648-ccb50bd29507">
 
 - **本文在不同知识点的详细程度上会有的放矢**，因为本意是Go->Java的转型，故最大的转变个人认为是由函数式编程->纯面向对象的转变，由此该偏向性造成不同章节的篇幅差别较大，比如**数组**和**包**由于其与其他知识点的隔离性，仍作为了独立章节进行笔记分享，但由于其并不是转型的关键点故其中所包含的字符数分别有2181、627个，而**类与对象**这一章节因其是转型到面向对象编程理念的核心章节，故有42622个字符
 
@@ -38,7 +37,8 @@
 
 - **本文重视总结**，尤其是在学习到某一接口、集合时，会总结出常用的方法，可供您在需要时查询，比如在**List接口**这一章节中:
 
-  ![image-20231225131139290](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231225131139290.png)
+  <img width="675" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/794aaa06-17f8-4fe0-8c90-0585cf0eb811">
+
 
 - 本文涵盖较全的Java基础知识点，共计有**162139**字符
 

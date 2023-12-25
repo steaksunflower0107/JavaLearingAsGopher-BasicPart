@@ -645,8 +645,8 @@ class 子类 extends 父类 {
   
 }
 ```
+<img width="783" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/3a2b8350-ddce-48b0-a66f-ea2cf7e6d2f2">
 
-![image-20231113140334670](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231113140334670.png)
 
 **注意点**
 
@@ -709,7 +709,8 @@ super代表队对父类的引用，是用于访问父类的属性、方法、构
 
 但和this在用法上不同的是，super并**不能访问到父类中用priviate修饰符修饰的属性和方法** 
 
-![image-20231113193017493](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231113193017493.png)     
+<img width="784" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/93e1e946-20bc-4517-99ed-70327e83f34f">
+  
 
 ```java
 class Base {
@@ -799,7 +800,8 @@ class Sub extends Base {
 
 这里将名称上类似的**方法重载**和**方法重写**作一个对比:
 
-![image-20231113194745249](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231113194745249.png)
+<img width="787" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/a7f42f6f-3fe6-4141-b3fc-b9875778eeee">
+
 
 可以看到实现方法重写的要求更加严格
 

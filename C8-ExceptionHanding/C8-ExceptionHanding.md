@@ -30,10 +30,9 @@ still running...
 ```
 
 ## 异常体系图
+<img width="785" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/7e12c980-97ed-4608-bc32-deb1d99e3f31">
 
-下图表述了各异常之间的继承关系，可见:
-
-会引起程序崩溃的事件可分为:
+上图表述了各异常之间的继承关系，可见会引起程序崩溃的事件可分为:
 
 - 异常
 

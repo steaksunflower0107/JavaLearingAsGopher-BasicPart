@@ -30,7 +30,9 @@ still running...
 ```
 
 ## 异常体系图
-<img width="785" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/7e12c980-97ed-4608-bc32-deb1d99e3f31">
+
+<img width="783" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/6979dfec-590c-4dd6-9a72-b87cf9c7b9cb">
+
 
 上图表述了各异常之间的继承关系，可见会引起程序崩溃的事件可分为:
 
@@ -57,8 +59,6 @@ still running...
   - 栈溢出错误
   - 内存溢出错误
   - ...
-
-![image-20231122150911227](/Users/steaksunflower/Library/Application Support/typora-user-images/image-20231122150911227.png)
 
 ## 异常操作方式
 

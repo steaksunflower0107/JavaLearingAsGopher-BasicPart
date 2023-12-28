@@ -48,7 +48,7 @@
 
 顺序遵从本文的章节排列顺序
 
-- Java概述
+- [Java概述](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C1-JavaIntroduce/C1-JavaIntroduce.md)
 - 基础语法
 - 数组
 - 类与对象

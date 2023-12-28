@@ -64,4 +64,4 @@
 
 其中在初版摒弃了I/O这一章节，原因在个人浅薄的理解上，对比Golang中的I/O操作，除了其类图外有较强的在基础层面上的学习价值外，用法与理念和Golang中类似，故做省略，在后续更新中会增添这一章节
 
-关于章节详情您可以查看仓库目录下的MENU.md，可供您进行选择性阅读
+关于章节详情您可以查看仓库目录下的[MENU.md](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/MENU.md)，可供您进行选择性阅读

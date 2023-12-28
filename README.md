@@ -49,17 +49,18 @@
 顺序遵从本文的章节排列顺序
 
 - [Java概述](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C1-JavaIntroduce/C1-JavaIntroduce.md)
-- 基础语法
-- 数组
-- 类与对象
-- 包
-- 枚举类和注解
-- 异常处理
-- 常用类
-- 集合
-- 泛型
-- 并发编程基础
-- 反射
+- [基础语法](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C2-BasicSyntax/C2-BasicSyntax.md)
+- [数组](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C3-Array/C3-Array.md)
+- [类与对象](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C4-ClassAndObject/C4-ClassAndObject.md)
+- [包](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C5-Package/C5-Package.md)
+- [抽象类与接口](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C6-AbstractClassAndInterface/C6-AbstractClassAndInterface.md)
+- [枚举类和注解](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C7-EnumerateClass%26Annotations/C7-EnumerateClass%26Annotations.md)
+- [异常处理](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C8-ExceptionHanding/C8-ExceptionHanding.md)
+- [常用类](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C9-CommonClass/C9-CommonClass.md)
+- [集合](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C10-Collection/C10-Collection.md)
+- [泛型](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C11-Generics/C11-Generics.md)
+- [并发编程基础](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C12-BasicConcurrentProgramming/C12-BasicConcurrentProgramming.md)
+- [反射](https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/blob/main/C13-Reflection/C13-Reflection.md)
 
 其中在初版摒弃了I/O这一章节，原因在个人浅薄的理解上，对比Golang中的I/O操作，除了其类图外有较强的在基础层面上的学习价值外，用法与理念和Golang中类似，故做省略，在后续更新中会增添这一章节
 

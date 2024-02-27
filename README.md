@@ -13,35 +13,41 @@
 # 本文特色
 
 - **在基础部分附有大量Golang与Java的对比**，十分适合Gopher在转型Java栈时或对Golang有兴趣的Java同学参考，比如在**方法重写**这一小节中:
+
+
+***
   <img width="833" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/fdbfe712-22bb-464d-9d06-311365a4454a">
 
 
 <img width="838" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/9e9e2ec0-6861-4dd6-a64f-a24dfb0e5c6a">
-
+***
 
 ​   您可以在本文中参考到很多诸如上述的对比例子
 
 - 在本文中您可以参考到很多**基于作者个人视角的思考**，或许能帮助您拓宽对某个知识点的理解面与开拓不同的理解方式，比如在**浅谈接口的实际意义**这一小节中:
+***
 
   <img width="834" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/9cc1b864-84fe-4af7-b072-685830a2a822">
 
-
+***
   您可以看到很多作者基于客观基础知识的主观性思考
 
 - **本文重试以Demo论述知识点**，附大量代码，比如在**向下转型**这一小节中，您可以看到:
+***
 
   <img width="833" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/171dea58-1a79-4ccd-8fc3-494c0feafc1b">
 
-
+***
 - **本文在不同知识点的详细程度上会有的放矢**，因为本意是完成Go->Java的转型，故最大的转变个人认为是由函数式编程->纯面向对象这一理念上的转变，故该偏向性造成不同章节的篇幅差别较大，比如**数组**和**包**由于其与其他知识点的隔离性，仍作为了独立章节进行分享，但由于其属于**语言共性**的内容故其中所包含的字符数分别有2181、627个，而**类与对象**这一章节由于其是转型到面向对象编程理念的核心章节，故有42622个字符
 
 - **本文是基础向文章，以打好基础和浅识原理为主**，故少有啃源码的篇幅
 
 - **本文重视总结**，尤其是在学习到某一接口、集合时，会总结出常用的方法，可供您在需要时查询，比如在**List接口**这一章节中:
+***
 
   <img width="675" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasePart/assets/112318617/794aaa06-17f8-4fe0-8c90-0585cf0eb811">
 
-
+***
 - 本文涵盖较全的Java基础知识点，共计有**162139**字符
 
 # 章节概览

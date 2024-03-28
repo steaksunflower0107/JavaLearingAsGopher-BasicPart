@@ -474,4 +474,246 @@ public static void main(String[] args) {
 }
 ```
 
-## 
+## Stream流
+
+Stream流操作分为3种类型:
+
+- 创建stream流
+- Stream中间处理
+- 终止Steam
+
+<img width="797" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/assets/112318617/977b8cf9-fc27-4238-8480-d75e6374bc8c">
+
+
+- **开始管道**
+
+  主要负责新建一个Stream流，或者基于现有的数组、List、Set、Map等集合类型对象创建出新的Stream流。
+
+  | API              | 功能说明                                         |
+  | ---------------- | ------------------------------------------------ |
+  | stream()         | 创建出一个新的stream串行流对象                   |
+  | parallelStream() | 创建出一个可并行执行的stream流对象               |
+  | Stream.of()      | 通过给定的一系列元素创建一个新的Stream串行流对象 |
+
+- **中间管道**
+
+  负责对Stream进行处理操作，并返回一个新的Stream对象，中间管道操作可以进行**叠加**。
+
+  | API        | 功能说明                                                     |
+  | ---------- | ------------------------------------------------------------ |
+  | filter()   | 按照条件过滤符合要求的元素， 返回新的stream流                |
+  | map()      | 将已有元素转换为另一个对象类型，一对一逻辑，返回新的stream流 |
+  | flatMap()  | 将已有元素转换为另一个对象类型，一对多逻辑，即原来一个元素对象可能会转换为1个或者多个新类型的元素，返回新的stream流 |
+  | limit()    | 仅保留集合前面指定个数的元素，返回新的stream流               |
+  | skip()     | 跳过集合前面指定个数的元素，返回新的stream流                 |
+  | concat()   | 将两个流的数据合并起来为1个新的流，返回新的stream流          |
+  | distinct() | 对Stream中所有元素进行去重，返回新的stream流                 |
+  | sorted()   | 对stream中所有的元素按照指定规则进行排序，返回新的stream流   |
+  | peek()     | 对stream流中的每个元素进行逐个遍历处理，返回处理后的stream流 |
+
+- **终止管道**
+
+  顾名思义，通过终止管道操作之后，Stream流将**会结束**，最后可能会执行某些逻辑处理，或者是按照要求返回某些执行后的结果数据。
+
+  | API         | 功能说明                                                     |
+  | ----------- | ------------------------------------------------------------ |
+  | count()     | 返回stream处理后最终的元素个数                               |
+  | max()       | 返回stream处理后的元素最大值                                 |
+  | min()       | 返回stream处理后的元素最小值                                 |
+  | findFirst() | 找到第一个符合条件的元素时则终止流处理                       |
+  | findAny()   | 找到任何一个符合条件的元素时则退出流处理，这个**对于串行流时与findFirst相同，对于并行流时比较高效**，任何分片中找到都会终止后续计算逻辑 |
+  | anyMatch()  | 返回一个boolean值，类似于isContains(),用于判断是否有符合条件的元素 |
+  | allMatch()  | 返回一个boolean值，用于判断是否所有元素都符合条件            |
+  | noneMatch() | 返回一个boolean值， 用于判断是否所有元素都不符合条件         |
+  | collect()   | 将流转换为指定的类型，通过Collectors进行指定                 |
+  | toArray()   | 将流转换为数组                                               |
+  | iterator()  | 将流转换为Iterator对象                                       |
+  | foreach()   | 无返回值，对元素进行逐个遍历，然后执行给定的处理逻辑         |
+
+
+
+### Collectors工具类
+
+Java Stream API 中的 `Collectors` 类是一个工具类，提供了很多静态方法，用于方便地创建 `Collector` 接口的实现，这样就可以使用 Stream 的 `collect` 方法来收集和封装数据。`Collector` 接口是用于将流中的元素累积成一个结果的组件，可以是一个汇总的结果（如总数、最大值、最小值等），也可以是一个集合（如列表、集合等）。
+
+下面是 `Collectors` 类中一些常见的静态方法
+
+| 方法名称                                              | 描述                                                         |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| `toList()`                                            | 将流元素收集到一个新的列表中。                               |
+| `toSet()`                                             | 将流元素收集到一个新的集合中，自动去重。                     |
+| `toMap()`                                             | 将流元素收集到一个 Map 中，可以使用一个或两个函数来确定键和值。 |
+| `collectingAndThen()`                                 | 允许你在收集操作之后应用一个额外的转换操作。                 |
+| `summingInt(ToIntFunction<? super T> f)`              | 将流中的元素通过给定的函数转换为整数并求和。                 |
+| `summingLong(ToLongFunction<? super T> f)`            | 将流中的元素通过给定的函数转换为长整数并求和。               |
+| `summingDouble(ToDoubleFunction<? super T> f)`        | 将流中的元素通过给定的函数转换为双精度浮点数并求和。         |
+| `averagingInt(ToIntFunction<? super T> f)`            | 计算流中元素的平均值（整数）。                               |
+| `averagingLong(ToLongFunction<? super T> f)`          | 计算流中元素的平均值（长整数）。                             |
+| `averagingDouble(ToDoubleFunction<? super T> f)`      | 计算流中元素的平均值（双精度浮点数）。                       |
+| `joining()`                                           | 将流中的元素连接成一个字符串，元素之间用指定的分隔符分隔。   |
+| `mapping(Function<? super T, ? extends U> mapper)`    | 将流中的每个元素通过给定的函数映射到另一个流，然后收集该映射流。 |
+| `reducing(T identity, BinaryOperator<T> accumulator)` | 通过一个二元操作符来累积流中的元素，可以提供一个初始值。     |
+
+### Stream方法使用
+
+#### map和flatMap
+
+`map`与`flatMap`都是用于转换已有的元素为其它元素，区别点在于：
+
+- map **必须是一对一的**，即每个元素都只能转换为1个新的元素
+- flatMap **可以是一对多的**，即每个元素都可以转换为1个或者多个新的元素
+
+例1: 通过stream流将一个整数数组写入到一个User数组的id属性中并返回:
+
+```java
+public void stringToUserMap() {
+    List<String> ids = Arrays.asList("205", "105", "308", "469", "627", "193", "111");
+
+    List<User> result = ids.stream().map(id -> {
+        User user = new User();
+        user.setId(id);
+        return user;
+    }).collect(Collectors.toList());
+    System.out.println(result);
+}
+```
+
+其中`return user`可以理解为是return到新创建的流
+
+例2: 通过stream流，将一个句子数组转换为一个单词数组并返回，此时可以应用能将一个对象转换为多个对象的flatMap:
+
+```java
+public void stringToFlatmap() {
+    List<String> sentences = Arrays.asList("hello world","Jia Gou Wu Dao");
+
+    List<String> result = sentences.stream().flatMap(sentence -> Arrays.stream(sentence.split( " ")))
+            .collect(Collectors.toList());
+
+    System.out.println(result);
+}
+```
+
+值得注意的是，例1和例2在底层实现上的机制是有不同的，flatMap的返回方式是将多个steam流拼装成一个stream流
+
+<img width="794" alt="image" src="https://github.com/steaksunflower0107/JavaLearingAsGopher-BasicPart/assets/112318617/8616c587-45aa-4225-9704-8a5149052db7">
+
+
+#### peek和foreach
+
+`peek`和`foreach`，都可以用于对元素进行遍历然后逐个的进行处理
+
+但**peek属于中间方法**，而**foreach属于终止方法**。这也就意味着peek只能作为管道中途的一个处理步骤，而没法直接执行得到结果，其后面必须还要有其它终止操作的时候才会被执行；而foreach作为无返回值的终止方法，则可以直接执行相关操作
+
+```java
+public void testPeekAndforeach() {
+    List<String> sentences = Arrays.asList("hello world","Jia Gou Wu Dao");
+
+    System.out.println("----before peek----");
+    sentences.stream().peek(sentence -> System.out.println(sentence));
+    System.out.println("----after peek----");
+
+    System.out.println("----before foreach----");
+    sentences.stream().forEach(sentence -> System.out.println(sentence));
+    System.out.println("----after foreach----");
+
+    System.out.println("----before peek and count----");
+    sentences.stream().peek(sentence -> System.out.println(sentence)).count();
+    System.out.println("----after peek and count----");
+}
+```
+
+输出:
+
+```shell
+----before peek----
+----after peek----
+----before foreach----
+hello world
+Jia Gou Wu Dao
+----after foreach----
+----before peek and count----
+hello world
+Jia Gou Wu Dao
+----after peek and count----
+```
+
+#### filter、sorted、distinct、limit
+
+这几个都是常用的Stream的中间操作方法，具体的方法的含义在上面的表格里面有说明。具体使用的时候，**可以根据需要选择一个或者多个进行组合使用，或者同时使用多个相同方法的组合**：
+
+```java
+public void testGetTargetUsers() {
+    List<String> ids = Arrays.asList("205","10","308","49","627","193","111", "193");
+    // 使用流操作
+    List<Dept> results = ids.stream()
+            .filter(s -> s.length() > 2)
+            .distinct()
+            .map(Integer::valueOf)
+            .sorted(Comparator.comparingInt(o -> o))
+            .limit(3)
+            .map(id -> new Dept(id))
+            .collect(Collectors.toList());
+}
+```
+
+1. 使用filter过滤掉不符合条件的数据
+2. 通过distinct对存量元素进行去重操作
+3. 通过map操作将字符串转成整数类型
+4. 借助sorted指定按照数字大小正序排列
+5. 使用limit截取排在前3位的元素
+6. 又一次使用map将id转为Dept对象类型
+7. 使用collect终止操作将最终处理后的数据收集到list中
+
+#### 简单结果终止方法
+
+终止方法里面像`count`、`max`、`min`、`findAny`、`findFirst`、`anyMatch`、`allMatch`、`nonneMatch`等方法，均属于这里说的简单结果终止方法。所谓简单，指的是其结果形式是数字、布尔值或者Optional对象值等
+
+```java
+public void testSimpleStopOptions() {
+    List<String> ids = Arrays.asList("205", "10", "308", "49", "627", "193", "111", "193");
+    // 统计stream操作后剩余的元素个数
+    System.out.println(ids.stream().filter(s -> s.length() > 2).count());
+    // 判断是否有元素值等于205
+    System.out.println(ids.stream().filter(s -> s.length() > 2).anyMatch("205"::equals));
+    // findFirst操作
+    ids.stream().filter(s -> s.length() > 2)
+            .findFirst()
+            .ifPresent(s -> System.out.println("findFirst:" + s));
+}
+```
+
+需要注意的是，当使用了终止方法后就不能再对stream流进行操作了
+
+### 实用实例
+
+- 生成拼接字符串
+
+  如果通过`for`循环和`StringBuilder`去循环拼接，还得考虑下最后一个逗号如何处理的问题，较为繁琐
+
+  通过Stream，使用`collect`可以轻松实现：
+
+  ```java
+  public void testCollectJoinStrings() {
+      List<String> ids = Arrays.asList("205", "10", "308", "49", "627", "193", "111", "193");
+      String joinResult = ids.stream().collect(Collectors.joining(","));
+      System.out.println("拼接后：" + joinResult);
+  }
+  ```
+
+- 进行统计
+
+  ```java
+  public void testNumberCalculate() {
+      List<Integer> ids = Arrays.asList(10, 20, 30, 40, 50);
+      // 计算平均值
+      Double average = ids.stream().collect(Collectors.averagingInt(value -> value));
+      System.out.println("平均值：" + average);
+      // 数据统计信息
+      IntSummaryStatistics summary = ids.stream().collect(Collectors.summarizingInt(value -> value));
+      System.out.println("数据统计信息： " + summary);
+  }
+  ```
+
+  
+
+
